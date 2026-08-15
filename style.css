@@ -1767,3 +1767,14 @@ transform:translateX(0);
 .menu-toggle.open span:nth-child(3){transform:translateY(-9px) rotate(-45deg);}
 
 }
+.stat strong a{
+color:inherit;
+text-decoration:none;
+}
+
+.stat strong a:hover{
+text-decoration:underline;
+}
+.reservation-form .full-width{
+grid-column:1 / -1;
+}
