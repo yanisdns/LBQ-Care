@@ -42,6 +42,8 @@
     <input type="email" id="email" placeholder="Email" required>
     <input type="tel" id="telephone" placeholder="Téléphone">
 
+    <input type="text" id="adresse" placeholder="Adresse (rue, numéro, code postal, ville)" required class="full-width">
+
     <input type="date" id="date" required>
     <input type="time" id="heure" required lang="fr" step="60">
 
@@ -57,7 +59,7 @@
       <option>Moto</option>
       <option>Voiture</option>
       <option>Petite camionnette</option>
-      <option>Grande camionnette</option>
+      <option>Grand camionnette</option>
       <option>Camion</option>
       <option>Autre véhicule</option>
     </select>
@@ -117,6 +119,7 @@ document.getElementById("reservationForm").addEventListener("submit", function(e
     let prenom = document.getElementById("prenom").value;
     let email = document.getElementById("email").value;
     let telephone = document.getElementById("telephone").value;
+    let adresse = document.getElementById("adresse").value;
     let date = document.getElementById("date").value;
     let heure = document.getElementById("heure").value;
     let service = document.getElementById("service").value;
@@ -129,6 +132,7 @@ document.getElementById("reservationForm").addEventListener("submit", function(e
 👤 Nom : ${nom} ${prenom}
 📧 Email : ${email}
 📱 Téléphone : ${telephone}
+🏠 Adresse : ${adresse}
 📅 Date : ${date}
 ⏰ Heure : ${heure}
 🚘 Type de véhicule : ${vehicule}
